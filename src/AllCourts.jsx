@@ -37,7 +37,8 @@ class AllCourts extends React.Component {
 
   render() {
     const { boroughs, tempArr } = this.state;
-    console.log(boroughs)
+    // console.log(boroughs)
+    console.log(tempArr)
     return (
       <div>
         Choose your Borough: {" "}
@@ -48,7 +49,6 @@ class AllCourts extends React.Component {
           {this.displayBoroughs.map((item, index) =>
             <option key={index} value={item}> {item} </option>)}
         </select>
-
         Return for hoops
           <ul>
           {tempArr.map(park => (
@@ -71,7 +71,6 @@ class AllCourts extends React.Component {
     );
   }
 }
-
 
 
 export default AllCourts;

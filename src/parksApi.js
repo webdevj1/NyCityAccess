@@ -564,7 +564,7 @@ const brooklynParks = Bourough => parks.filter(park => park['Prop_ID'].includes(
 const manhattanParks = Bourough => parks.filter(park => park['Prop_ID'].includes('M'));
 const queensParks = Bourough => parks.filter(park => park['Prop_ID'].includes('Q'));
 const statenIslandParks = Bourough => parks.filter(park => park['Prop_ID'].includes('R'));
-const getLocation = Street => parks.filter(park => park['Location'].includes(Street));
+const getLocation = (arrOfParks, Street) => arrOfParks.filter(park => park['Location'].includes(Street));
 const getWheelhcair = (arr) => arr.filter(park => park['Accessible']==='Y');
 
 
