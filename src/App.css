@@ -2,27 +2,36 @@
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
 .App-header {
-  background-color: #222;
+  background-color:white;
   height: 150px;
   padding: 20px;
-  color: white;
+  color:black;
 }
 
 .App-title {
-  font-size: 1.5em;
+  font-size: 7.5em;
 }
 
-.App-intro {
-  font-size: large;
+button{
+  width: 20%;
+  height: 20%;
+  position: center;
+
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.App-img{
+  background-image: url("http://upl.stack.com/wp-content/uploads/2015/11/24150806/5-Tips-for-Better-Basketball-Ball-Control-STACK.jpg");
+  min-height: 100%;
+  min-width: 720px;
+  width: 100%;
+  height: auto;
+  position: relative;
+  top: 0;
+  left: 0;
+
 }
+
+
+
+
