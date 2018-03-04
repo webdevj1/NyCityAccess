@@ -131,12 +131,12 @@ console.log(linkTo)
 
            <h2> {boroughs}</h2>{''}
            Find park in Boroughs
-           <input
+           {/* <input
            name='inputState'
            value={inputState}
            onInput={this.handleSearch}
            >
-           </input>
+           </input> */}
            <a href={linkTo}>ARE YOU A FAN</a>
           <ul>
           {tempArr.map(park => (
@@ -148,8 +148,6 @@ console.log(linkTo)
                   {park.Name}<br/>
                   {park.Location}<br/>
                   {park.Num_of_Courts}<br/>
-                  {typeof park.lat}<br/>
-                  {typeof park.lon}<br/>
                   {/* {console.log(begin+'='+park.lat+','+park.lon+end)} */}
                   <img className="App-img" src={begin+'='+park.lat+','+park.lon+end}>
                   </img>
