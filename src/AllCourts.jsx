@@ -74,6 +74,7 @@ class AllCourts extends React.Component {
       tempArr : [...stuff]
     })
   };
+
   handleSearch = e =>{
     const {tempArr, inputState } = this.state
     let val = e.target.value
@@ -116,7 +117,9 @@ if(linkTo === undefined){
 console.log(boroughs)
 console.log(linkTo)
     return (
-      <div>
+
+      <div className='courts'>
+
         {/* {console.log(rr)} */}
         Choose your Borough: {" "}
 
