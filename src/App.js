@@ -22,7 +22,10 @@ const App = () =>
       </nav>
       <Route exact path="/" component={Home} />
       <Route path="/allcourts" component={AllCourts} />
-   
+      {/* <Route
+        path="/allcourts/"
+        // component={ComponentWithRegex}
+      /> */}
     </div>
   // </Router>
 );
