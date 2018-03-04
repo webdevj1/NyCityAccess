@@ -5,7 +5,8 @@ import Home from './Home';
 
 const navStyle = {
       backgroundColor: "#77808e",
-      color:'white'
+      color:'white',
+      marginLeft:"10px"
     }
 
 

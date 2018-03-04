@@ -141,10 +141,10 @@ console.log(linkTo)
            onInput={this.handleSearch}
            >
            </input>
-          <ul>
+          <div>
           {search.map(park => (
             <div>
-              <li>
+              <div className="maps">
                 <div>
                   {/* {console.log(park)} */}
                 <br/>
@@ -154,14 +154,14 @@ console.log(linkTo)
                   {/* {console.log(begin+'='+park.lat+','+park.lon+end)} */}
                   <img className="App-img" src={begin+'='+park.lat+','+park.lon+end}>
                   </img>
-                  done
+            
                 </div>
                 <br/>
                 <br/>
-              </li>
+              </div>
             </div>
           ))}
-        </ul>
+        </div>
       </div>
     );
   }
