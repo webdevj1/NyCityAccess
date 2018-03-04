@@ -77,19 +77,18 @@ class AllCourts extends React.Component {
   handleSearch = e =>{
     const {tempArr, inputState } = this.state
     let val = e.target.value
-   console.log(val)
-    let search = tempArr.filter(park =>(
-      park.Name.includes(val)
-    ))
-
-    this.setState({
-      tempArr : [...search],
-      inputState: e.target.value    
+    console.log(val)
+       this.setState({
+      // tempArr : search,
+      inputState: e.target.value ,   
     })
   }
 
   render() {
     const {  tempArr, inputState } = this.state;
+    let search = tempArr.filter(park =>(
+      park.Name.includes(inputState)
+    ))
     console.log('MY INPUT ===> ',inputState)
     let boroughs = this.context.router.history.location.pathname  
      boroughs = boroughs.slice(11)
@@ -129,17 +128,18 @@ console.log(linkTo)
             <option key={index} value={item}> {item} </option>)}
         </select><br/>
 
+           <a href={linkTo}>Are you fan of the game? </a> <br/>
            <h2> {boroughs}</h2>{''}
-           Find park in Boroughs
-           {/* <input
+          
+           Find park in Boroughs<br/>
+           <input
            name='inputState'
            value={inputState}
            onInput={this.handleSearch}
            >
-           </input> */}
-           <a href={linkTo}>ARE YOU A FAN</a>
+           </input>
           <ul>
-          {tempArr.map(park => (
+          {search.map(park => (
             <div>
               <li>
                 <div>
