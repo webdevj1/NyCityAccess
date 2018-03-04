@@ -5,10 +5,10 @@ import  AllCourts  from './AllCourts';
 
 const Home = () =>{
     return (
-        <div>
-        <header >
+        <div className="home"> 
+ 
           <h1 className="App-title">NYCity HOOPS</h1>
-        </header>
+      
         <Link to="/allcourts" >Find Basket Ball Courts </Link>
         <Switch>
             <Route exact path="/allcourts" component={AllCourts} />
