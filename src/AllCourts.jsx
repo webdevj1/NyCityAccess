@@ -39,6 +39,7 @@ class AllCourts extends React.Component {
       tempArr : [...stuff]
     })
   };
+  
 
   render() {
     const { boroughs, tempArr } = this.state;
