@@ -28,6 +28,8 @@ class AllCourts extends React.Component {
     }
     if (tg==='Staten Island'){
       stuff = parks.statenIslandParks()
+    }else{
+      stuff = [];
     }
     this.setState({
       boroughs: e.target.value,
