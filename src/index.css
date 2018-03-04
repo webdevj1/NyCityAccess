@@ -33,3 +33,15 @@ Link{
   text-decoration: underline;
 }
 
+
+a:hover {
+  background-color:orangered;
+  color:red;
+}
+a:visited {
+  color:white;
+}
+.courts{
+  color:white;
+  height:800px;
+}
