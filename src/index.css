@@ -1,5 +1,6 @@
 body {
 
+
 margin: 0;
 padding: 0;
 font-family: sans-serif;
@@ -8,10 +9,14 @@ background-repeat: no-repeat;
 background-attachment: fixed;
 background-size: cover;
 background-image: url(/home.jpg);
-}
+ background-color:black;
+} 
+
+
+
 
 h1{
-  margin-top: 30%;
+  /* margin-top: 30%; */
   font-size: 8.5em;
   position: center;
   color: whitesmoke;
@@ -23,6 +28,7 @@ Link{
 }
 
 
+
 a:hover {
   background-color:orangered;
   color:red;
@@ -30,6 +36,7 @@ a:hover {
 a:visited {
   color:white;
 }
+
 .courts{
   color:white;
   height:800px;
