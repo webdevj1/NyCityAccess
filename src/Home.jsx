@@ -7,7 +7,7 @@ const Home = () =>{
     return (
         <div>
         <header >
-          <h1 className="App-title">Welcome to NYC HOOPS</h1>
+          <h1 className="App-title">NYCity HOOPS</h1>
         </header>
         <Link to="/allcourts" >Find Basket Ball Courts </Link>
         <Switch>

@@ -11,6 +11,8 @@
 
 .App-title {
   font-size: 7.5em;
+  position: center;
+  color: whitesmoke;
 }
 
 button{
@@ -31,6 +33,20 @@ button{
   left: 0;
 
 }
+h1{
+    display: block;
+    font-size: 10em;
+    -webkit-margin-before: 0.67em;
+    -webkit-margin-after: 0.67em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+}
+Link{
+  color:white;
+  text-decoration: underline;
+}
+
 
 
 

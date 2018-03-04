@@ -3,16 +3,20 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import AllCourts from './AllCourts';
 import Home from './Home';
 
+
 const App = () => (
   <Router>
     <div>
- 
-          <Link to="/">Home</Link> { " | " }
-
+      
+      <ul>
+        <li>
+          <Link to="/">Home</Link>
+        </li>
+        <li>
           <Link to="/allcourts">All Courts</Link>
-
-      <hr />
-
+        </li>
+    
+      </ul>
       <Route exact path="/" component={Home} />
       <Route path="/allcourts" component={AllCourts} />
    
