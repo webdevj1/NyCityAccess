@@ -17,34 +17,14 @@ Link{
 }
 
 
-.main{
-  margin-top: 0px;
-  margin-bottom: 0px;
-  background-image: url("http://upl.stack.com/wp-content/uploads/2015/11/24150806/5-Tips-for-Better-Basketball-Ball-Control-STACK.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  height:100vh;
-  height: auto;
-  position: relative;
-}
-
 
 a:hover {
   background-color:orangered;
   color:red;
-
 }
-
 a:visited {
   color:white;
-
 }
-
-
-/* a:default {
-  color:white;
-
-} */
 
 .courts{
   color:white;
