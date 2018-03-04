@@ -1,6 +1,17 @@
 body {
+
+
+margin: 0;
+padding: 0;
+font-family: sans-serif;
+background-position: relative;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+background-image: url(/home.jpg);
  background-color:black;
 } 
+
 
 
 
