@@ -22,6 +22,7 @@ class AllCourts extends React.Component {
     this.displayBoroughs = ['', 'Brooklyn', "Bronx", "Manhattan", "Queens", "Staten Island"]
     this.state = {
       boroughs: "",
+       inputState: "",
       tempArr: []
     };
   }
@@ -73,9 +74,14 @@ class AllCourts extends React.Component {
       tempArr : [...stuff]
     })
   };
+  handleSearch = e =>{
+    this.setState({
+      inputState: e.target.value
+    })
+  }
 
   render() {
-    const {  tempArr } = this.state;
+    const {  tempArr, inputState } = this.state;
     // console.log(boroughs)
     let boroughs = this.context.router.history.location.pathname  
      boroughs = boroughs.slice(11)
@@ -86,27 +92,22 @@ class AllCourts extends React.Component {
     let statenIs = 'https://www.meetup.com/topics/basketball/us/ny/staten_island/'
     let queens = 'https://www.meetup.com/topics/basketball/us/ny/long_island_city/'
     let manhattan = 'https://www.meetup.com/topics/basketball/us/ny/new_york/'
-let linkTo = 'https://www.meetup.com/topics/basketball/us/ny/new_york/'
+
   let tags =  {
-    bk : 'https://www.meetup.com/topics/basketball/us/ny/brooklyn/',
-    bx :'https://www.meetup.com/topics/basketball/us/ny/bronx/',
-    statenIs : 'https://www.meetup.com/topics/basketball/us/ny/staten_island/',
-    queens : 'https://www.meetup.com/topics/basketball/us/ny/long_island_city/',
-    manhattan : 'https://www.meetup.com/topics/basketball/us/ny/new_york/'
+    "Brooklyn" : 'https://www.meetup.com/topics/basketball/us/ny/brooklyn/',
+    "Bronx" :'https://www.meetup.com/topics/basketball/us/ny/bronx/',
+    "Staten Island" : 'https://www.meetup.com/topics/basketball/us/ny/staten_island/',
+    "Queens" : 'https://www.meetup.com/topics/basketball/us/ny/long_island_city/',
+    "Manhattan" : 'https://www.meetup.com/topics/basketball/us/ny/new_york/'
   }
+   let linkTo = tags[boroughs]
   
-  if (boroughs==='Manhattan'){
-    linkTo= tags.manhattan
-  } else if (boroughs==='Bronx'){
-    linkTo= tags.bx
-  } else if (boroughs==='Queens'){
-    linkTo= tags.queens
-  }else if (boroughs==='Broolklyn'){
-    linkTo= tags.bk
-  }else if (boroughs==='Staten Island'){
-    linkTo= tags.bx
-  } 
-  
+if(linkTo === undefined){
+  linkTo = 'https://www.meetup.com/topics/basketball/us/ny/new_york/'
+}
+
+console.log(boroughs)
+console.log(linkTo)
     return (
       <div>
         {/* {console.log(rr)} */}
@@ -121,6 +122,12 @@ let linkTo = 'https://www.meetup.com/topics/basketball/us/ny/new_york/'
         </select><br/>
 
            <h2> {boroughs}</h2>{''}
+           Find park in Boroughs
+           <input
+           name=''
+           value={inputState}
+           >
+           </input>
            <a href={linkTo}>ARE YOU A FAN</a>
           <ul>
           {tempArr.map(park => (
