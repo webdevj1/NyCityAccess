@@ -3,25 +3,28 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import AllCourts from './AllCourts';
 import Home from './Home';
 
+const navStyle = {
+      backgroundColor: "#77808e",
+      color:'white'
+    }
 
-const App = () => (
-  <Router>
-    <div>
-      
-      <ul>
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-        <li>
-          <Link to="/allcourts">All Courts</Link>
-        </li>
+
+const App = () =>   
+(
     
-      </ul>
+  // <Router>
+    <div className="main">
+      
+      <nav style={navStyle}>
+      
+          <Link to="/">Home</Link> {' | '}
+          <Link to="/allcourts">All Courts</Link>
+      </nav>
       <Route exact path="/" component={Home} />
       <Route path="/allcourts" component={AllCourts} />
    
     </div>
-  </Router>
+  // </Router>
 );
 
 
