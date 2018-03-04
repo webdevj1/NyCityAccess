@@ -6,15 +6,10 @@ import Home from './Home';
 const App = () => (
   <Router>
     <div>
-      <ul>
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-        <li>
+ 
+          <Link to="/">Home</Link> { " | " }
+
           <Link to="/allcourts">All Courts</Link>
-        </li>
-    
-      </ul>
 
       <hr />
 

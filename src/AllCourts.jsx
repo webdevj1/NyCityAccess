@@ -32,6 +32,7 @@ class AllCourts extends React.Component {
       stuff = parks.statenIslandParks()
     }else {
       stuff = []
+
     }
     this.setState({
       boroughs: e.target.value,
