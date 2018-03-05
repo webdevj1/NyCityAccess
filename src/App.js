@@ -16,16 +16,11 @@ const App = () =>
     <div className="main">
       
       <nav style={navStyle}>
-      
           <Link to="/">Home</Link> {' | '}
           <Link to="/allcourts">All Courts</Link>
       </nav>
       <Route exact path="/" component={Home} />
       <Route path="/allcourts" component={AllCourts} />
-      {/* <Route
-        path="/allcourts/"
-        // component={ComponentWithRegex}
-      /> */}
     </div>
   // </Router>
 );

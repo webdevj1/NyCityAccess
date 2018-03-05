@@ -15,7 +15,7 @@ const Home2 = () =>{
         <Switch>
             <Route exact path="/allcourts" component={AllCourts} />
         </Switch>
-        
+    
         </div>
     )
 }

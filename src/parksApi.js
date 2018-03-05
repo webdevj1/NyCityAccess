@@ -546,7 +546,7 @@ const parks = [
     { "Prop_ID": "X260", "Name": "Julio Carballo Fields", "Location": "Lafayette Avenue and Barretto Street", "Num_of_Courts": "1", "Accessible": null, "lat": "40.8162", "lon": "-73.8896" }, 
     { "Prop_ID": "M308", "Name": "Washington Market Park", "Location": "Chambers St. between Greenwich St. and West St.", "Num_of_Courts": "2", "Accessible": null, "lat": "40.7171", "lon": "-74.012" }, 
     { "Prop_ID": "M064", "Name": "Lillian D Wald Playground", "Location": "Cherry St, Montgomery St and Gouverneur St", "Num_of_Courts": null, "Accessible": null, "lat": "40.7121", "lon": "-73.9842" }, 
-    { "Prop_ID": "Q471", "Name": "Hunter's Point South Park", "Location": null, "Num_of_Courts": "1", "Accessible": "N", "lat": null, "lon": null }, 
+    { "Prop_ID": "Q471", "Name": "Hunter's Point South Park", "Location": "Center Blvd. bet. 50 Ave. and 54 Ave.", "Num_of_Courts": "1", "Accessible": "N", "lat": "40.742432", "lon": "-73.960305" }, 
     { "Prop_ID": "Q031", "Name": "Windmuller Park", "Location": "52 St., Woodside Ave. bet. 39 Rd. and 39 Dr.", "Num_of_Courts": "2", "Accessible": "N", "lat": "40.7476", "lon": "-73.9114" }, 
     { "Prop_ID": "B431", "Name": "Brooklyn Bridge Park", "Location": "Pier 2", "Num_of_Courts": "5", "Accessible": null, "lat": "40.6992", "lon": "-73.9983" }, 
     { "Prop_ID": "B139", "Name": "Heckscher Playground", "Location": "Linden Street and Central Avenue", "Num_of_Courts": "2", "Accessible": null, "lat": null, "lon": null }, 
