@@ -2,14 +2,16 @@ import React from 'react';
 import logo from './logo.svg';
 import {Link, Switch, Route} from 'react-router-dom';
 import  AllCourts  from './AllCourts';
+import Button from './Button';
 
 const Home = () =>{
     return (
         <div className="home"> 
  
-          <h1 className="App-title">NYCity HOOPS</h1>
+          <h1 className="App-title">NY CITY HOOPS</h1>
       
-        <Link to="/allcourts" >Find Basket Ball Courts </Link>
+          <Button />
+        
         <Switch>
             <Route exact path="/allcourts" component={AllCourts} />
         </Switch>

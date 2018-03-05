@@ -12,23 +12,18 @@ const navStyle = {
 
 const App = () =>   
 (
-    
-  // <Router>
+  
     <div className="main">
       
-      <nav style={navStyle}>
-      
+      <nav >
           <Link to="/">Home</Link> {' | '}
-          <Link to="/allcourts">All Courts</Link>
+          <Link className="all" to="/allcourts">All Courts</Link>
       </nav>
       <Route exact path="/" component={Home} />
       <Route path="/allcourts" component={AllCourts} />
-      {/* <Route
-        path="/allcourts/"
-        // component={ComponentWithRegex}
-      /> */}
+    
     </div>
-  // </Router>
+
 );
 
 

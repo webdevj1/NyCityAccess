@@ -1,6 +1,4 @@
 body {
-
-
 margin: 0;
 padding: 0;
 font-family: sans-serif;
@@ -9,32 +7,74 @@ background-repeat: no-repeat;
 background-attachment: fixed;
 background-size: cover;
 background-image: url(/home.jpg);
- background-color:black;
+background-color:black;
+
 } 
 
 
 h1{
-  /* margin-top: 30%; */
   font-size: 8.5em;
   position: center;
   color: whitesmoke;
   text-align: center;
 }
-Link{
-  color:white;
-  text-decoration: underline;
-}
+
 
 a:hover {
   background-color:orangered;
   color:red;
+
 }
 a:visited {
   color:white;
+
 }
 
 .courts{
   color:white;
   height:800px;
   margin-left: 10px;
+
+}
+
+
+button{
+  display: table-cell;
+  vertical-align: middle;
+    background: #F96400;
+    border-radius: 28px;
+    font-family: inherit;
+    color: #1D428A;
+    font-size: 24px;
+   
+    padding:15px;
+    margin-left: 19em;
+    margin-top: 6em;
+    opacity: 0.5;
+    /* position: fixed; */
+ 
+  }
+  button:hover {
+    background-color: #F96400;
+    opacity: 1.0;
+    filter: alpha(opacity=100); /* For IE8 and earlier */
+   
+}
+
+Link{
+  text-decoration:none;
+}
+
+
+
+nav{
+  padding-top: 10px;
+  padding-left: 10px;
+  background-color:black;
+  opacity: .75;
+  height: 3.5em;
+}
+
+a{
+  text-decoration: none;
 }

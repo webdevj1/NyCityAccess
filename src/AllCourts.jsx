@@ -129,7 +129,7 @@ console.log(linkTo)
           >
           {this.displayBoroughs.map((item, index) =>
             <option key={index} value={item}> {item} </option>)}
-        </select><br/>
+        </select><br/><br/>
 
            <a href={linkTo}>Are you fan of the game? </a> <br/>
            <h2> {boroughs}</h2>{''}
